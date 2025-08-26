@@ -42,5 +42,4 @@ htmlcov/
 .mypy_cache/
 .dmy
 
-tests/test_smoke.py
 unit.xml

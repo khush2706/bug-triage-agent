@@ -21,7 +21,7 @@ Build an AI agent that:
      - Output (JSON-only, deterministic):
       ```json
       {
-        "actions": ["classify", "create", "assign", "notify"],
+        "actions": ["classify", "creImate", "assign", "notify"],
         "bug_description": "...",
         "employee_name": "..."
       }
@@ -97,8 +97,6 @@ Final workflow output:
   "severity": "major"
 }
 ```
-
-If the severity were Critical, the workflow would also call the Slack notify mock before returning the final JSON.
 
 ---
 
