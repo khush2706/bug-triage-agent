@@ -1,0 +1,29 @@
+version: 1.0
+configuration:
+    has_webserver: false
+    scoring:
+        command: python3 -m pytest tests/ -v --junit-xml=unit.xml -n auto || true
+        files:
+            - unit.xml
+    ide_config:
+        default_open_files:
+            - README.md
+            - src/orchestrator.py
+            - src/agents.py
+            - src/prompts/parser.txt
+            - src/prompts/classifier.txt
+            - src/helpers/mock_apis.py
+            - src/helpers/llm.py
+            - src/pipeline.py
+        project_menu:
+            install: python3 -m pip install -r requirements.txt
+            run: python3 -m src.pipeline "Create a bug for login fails with 500; assign to Alice and notify."
+            test: python3 -m pytest tests/ -v --junit-xml=unit.xml -n auto || true
+    readonly_paths:
+        - README.md
+        - src/pipeline.py
+        - hackerrank.yml
+        - requirements.txt
+        - tests/test_smoke.py
+
+

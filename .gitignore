@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Installer metadata
+*.egg-info/
+.eggs/
+*.egg
+
+# Local config
+*.env
+*.env.local
+
+# MacOS metadata
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Pyproject / setuptools build artifacts
+build/
+dist/
+
+# Jupyter Notebook checkpoints (optional)
+.ipynb_checkpoints/
+
+# Coverage and test output
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+
+# MyPy / Pylint / Ruff
+.mypy_cache/
+.dmy
+
+tests/test_smoke.py
+unit.xml

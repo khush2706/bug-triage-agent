@@ -1,0 +1,3 @@
+INSTRUCTIONS TO CANDIDATE: Implement the actual prompt content.
+Requirement: The prompt must instruct the LLM to output JSON only with keys "actions", "bug_description", and "employee_name".
+
