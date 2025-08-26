@@ -17,8 +17,8 @@ configuration:
             - src/pipeline.py
         project_menu:
             install: python3 -m pip install -r requirements.txt
-            run: python3 -m src.pipeline "Create a bug for login fails with 500; assign to Alice and notify."
-            test: python3 -m pytest tests/ -v --junit-xml=unit.xml -n auto || true
+            run: python3 -m pip install -r requirements.txt && python3 -m src.pipeline "Create a bug for login fails with 500; assign to Alice and notify."
+            test: python3 -m pip install -r requirements.txt && python3 -m pytest tests/ -v --junit-xml=unit.xml -n auto || true
     readonly_paths:
         - README.md
         - src/pipeline.py
