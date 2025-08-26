@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "channel": "C1234567890",
+  "ts": "1712000000.000100",
+  "message": {
+    "type": "message",
+    "text": "Sample notification",
+    "user": "U1234567890",
+    "ts": "1712000000.000100",
+    "bot_id": "B1234567890",
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "Sample notification"
+        }
+      }
+    ]
+  },
+  "response_metadata": {
+    "warnings": []
+  }
+}
+
